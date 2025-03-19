@@ -24,7 +24,6 @@ func main() {
     var arrayNum : [Float] = []
     var lineCounter = 0
     var average:Float = 0
-    var sum:Float = 0
     var randNum = 0
 
     // Introduce program to user
@@ -33,6 +32,10 @@ func main() {
 
     // Loop to get 5 lines of 10 random numbers
     repeat {
+
+        // Initialize sum
+        var sum:Float = 0
+
         // Populate array with 10 random numbers between 0-100
         for _ in 0..<MAX_SIZE {
             randNum = Int.random(in: MIN...MAX)
